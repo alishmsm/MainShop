@@ -2,6 +2,9 @@
 
 public class Response<TData>
 {
+    public Response()
+    {
+    }
     public Response(TData data,bool _IsSucces,string _Message)
     {
         Message = _Message;

@@ -6,8 +6,7 @@ namespace Client.Shop.Pages;
 
 public class ProductList : ComponentBase
 {
-
-
+    
     [Inject]
     public IProductService productService{ get; set; }
 
@@ -15,7 +14,7 @@ public class ProductList : ComponentBase
     
     protected override async Task OnInitializedAsync()
     {
-        var response = await productService.GetEmployees();
-        // Products = response.Data;
+        var response = await productService.GetProduct();
+        Products = response.Data;
     }
 }

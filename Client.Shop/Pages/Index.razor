@@ -1,16 +1,41 @@
 ﻿@page "/"
-
+@inherits ProductList
 @* @using Shope.Domain.Entities.User *@
 
-<PageTitle>Index</PageTitle>
+<PageTitle>محصولات</PageTitle>
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?"/>
-
-@code{
-    
-    
-}
+<h1 class="Centerize
+">لیست محصولات</h1>
+<div class="row">
+    <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+            <th>نام محصول</th>
+            <th>توضیحات</th>
+            <th>تاریخ ایجاد</th>
+        </tr>
+        </thead>
+        <tbody>
+        @if (Products != null)
+        {
+            @foreach (var product in Products)
+            {
+                <tr>
+        
+                    <td>@product.Name</td>
+                    <td>@product.Description</td>
+                    <td>@product.CreatDate.ToString()</td>
+        
+                </tr>
+        
+            }
+        }
+        else
+        {
+            <p>
+                There isn't Product
+            </p>
+        }
+        </tbody>
+    </table>
+</div>

@@ -36,6 +36,18 @@ public class ProductService : IProductService
 
     }
 
+    public async Task<IEnumerable<ProductDto>> GetAllProductAsync()
+    {
+        var query = _context.Products
+            .AsNoTracking()
+            .Where(x => x.IsDelete == false);
+        var Productlist = await query
+            .ProjectTo<ProductDto>(_mapper.ConfigurationProvider)
+            .ToListAsync();
+        
+        return Productlist.ToList();
+
+    }
     public async Task<Response<ProductDto>> GetProductByIdAsync(int id)
     {
         var Item = await _context.Products.AsNoTracking()

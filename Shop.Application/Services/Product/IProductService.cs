@@ -10,5 +10,6 @@ public interface IProductService
     Task<Response<bool>> CreateProductAsync(ProductDto _product);
     Task<Response<bool>> DeleteProductAsync(int id);
     Task<Response<ProductDto?>> UpdateProductAsync(ProductDto _product);
+    Task<IEnumerable<ProductDto>> GetAllProductAsync();
 
 }
