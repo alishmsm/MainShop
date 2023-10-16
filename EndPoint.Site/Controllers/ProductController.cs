@@ -16,6 +16,7 @@ public class ProductController : ControllerBase
         _service = service;
     }
     
+
     [HttpGet]
     public async Task<IActionResult> GetAllProductAsync([FromQuery]int page,int pageSize,string? search)
     {

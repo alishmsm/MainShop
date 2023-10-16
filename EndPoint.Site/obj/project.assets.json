@@ -11983,33 +11983,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "C:\\Users\\Shamsodini.Ali\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\CsharpProject\\Shop\\EndPoint.Site\\EndPoint.Site.csproj",
+      "projectUniqueName": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\EndPoint.Site\\EndPoint.Site.csproj",
       "projectName": "EndPoint.Site",
-      "projectPath": "H:\\CsharpProject\\Shop\\EndPoint.Site\\EndPoint.Site.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "H:\\CsharpProject\\Shop\\EndPoint.Site\\obj\\",
+      "projectPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\EndPoint.Site\\EndPoint.Site.csproj",
+      "packagesPath": "C:\\Users\\Shamsodini.Ali\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\EndPoint.Site\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Shamsodini.Ali\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files\\dotnet\\sdk\\7.0.308\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "H:\\CsharpProject\\Shop\\Shop.Persistence\\Shop.Persistence.csproj": {
-              "projectPath": "H:\\CsharpProject\\Shop\\Shop.Persistence\\Shop.Persistence.csproj"
+            "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Persistence\\Shop.Persistence.csproj": {
+              "projectPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Persistence\\Shop.Persistence.csproj"
             }
           }
         }
@@ -12082,7 +12081,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

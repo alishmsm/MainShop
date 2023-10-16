@@ -1,34 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "H:\\CsharpProject\\Shop\\EndPoint.Site\\EndPoint.Site.csproj": {}
+    "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\EndPoint.Site\\EndPoint.Site.csproj": {}
   },
   "projects": {
-    "H:\\CsharpProject\\Shop\\EndPoint.Site\\EndPoint.Site.csproj": {
+    "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\EndPoint.Site\\EndPoint.Site.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\CsharpProject\\Shop\\EndPoint.Site\\EndPoint.Site.csproj",
+        "projectUniqueName": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\EndPoint.Site\\EndPoint.Site.csproj",
         "projectName": "EndPoint.Site",
-        "projectPath": "H:\\CsharpProject\\Shop\\EndPoint.Site\\EndPoint.Site.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "H:\\CsharpProject\\Shop\\EndPoint.Site\\obj\\",
+        "projectPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\EndPoint.Site\\EndPoint.Site.csproj",
+        "packagesPath": "C:\\Users\\Shamsodini.Ali\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\EndPoint.Site\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Shamsodini.Ali\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\sdk\\7.0.308\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "H:\\CsharpProject\\Shop\\Shop.Persistence\\Shop.Persistence.csproj": {
-                "projectPath": "H:\\CsharpProject\\Shop\\Shop.Persistence\\Shop.Persistence.csproj"
+              "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Persistence\\Shop.Persistence.csproj": {
+                "projectPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Persistence\\Shop.Persistence.csproj"
               }
             }
           }
@@ -101,21 +100,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "H:\\CsharpProject\\Shop\\Shop.Application\\Shop.Application.csproj": {
+    "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Application\\Shop.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\CsharpProject\\Shop\\Shop.Application\\Shop.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Application\\Shop.Application.csproj",
         "projectName": "Shop.Application",
-        "projectPath": "H:\\CsharpProject\\Shop\\Shop.Application\\Shop.Application.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "H:\\CsharpProject\\Shop\\Shop.Application\\obj\\",
+        "projectPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Application\\Shop.Application.csproj",
+        "packagesPath": "C:\\Users\\Shamsodini.Ali\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Shamsodini.Ali\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -127,11 +126,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "H:\\CsharpProject\\Shop\\Shop.Common\\Shop.Common.csproj": {
-                "projectPath": "H:\\CsharpProject\\Shop\\Shop.Common\\Shop.Common.csproj"
+              "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Common\\Shop.Common.csproj": {
+                "projectPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Common\\Shop.Common.csproj"
               },
-              "H:\\CsharpProject\\Shop\\Shop.Domain\\Shop.Domain.csproj": {
-                "projectPath": "H:\\CsharpProject\\Shop\\Shop.Domain\\Shop.Domain.csproj"
+              "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Domain\\Shop.Domain.csproj": {
+                "projectPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Domain\\Shop.Domain.csproj"
               }
             }
           }
@@ -183,21 +182,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "H:\\CsharpProject\\Shop\\Shop.Common\\Shop.Common.csproj": {
+    "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Common\\Shop.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\CsharpProject\\Shop\\Shop.Common\\Shop.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Common\\Shop.Common.csproj",
         "projectName": "Shop.Common",
-        "projectPath": "H:\\CsharpProject\\Shop\\Shop.Common\\Shop.Common.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "H:\\CsharpProject\\Shop\\Shop.Common\\obj\\",
+        "projectPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Common\\Shop.Common.csproj",
+        "packagesPath": "C:\\Users\\Shamsodini.Ali\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Shamsodini.Ali\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -209,8 +208,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "H:\\CsharpProject\\Shop\\Shop.Domain\\Shop.Domain.csproj": {
-                "projectPath": "H:\\CsharpProject\\Shop\\Shop.Domain\\Shop.Domain.csproj"
+              "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Domain\\Shop.Domain.csproj": {
+                "projectPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Domain\\Shop.Domain.csproj"
               }
             }
           }
@@ -250,21 +249,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "H:\\CsharpProject\\Shop\\Shop.Domain\\Shop.Domain.csproj": {
+    "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Domain\\Shop.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\CsharpProject\\Shop\\Shop.Domain\\Shop.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Domain\\Shop.Domain.csproj",
         "projectName": "Shop.Domain",
-        "projectPath": "H:\\CsharpProject\\Shop\\Shop.Domain\\Shop.Domain.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "H:\\CsharpProject\\Shop\\Shop.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Domain\\Shop.Domain.csproj",
+        "packagesPath": "C:\\Users\\Shamsodini.Ali\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Shamsodini.Ali\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -309,21 +308,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "H:\\CsharpProject\\Shop\\Shop.Persistence\\Shop.Persistence.csproj": {
+    "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Persistence\\Shop.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\CsharpProject\\Shop\\Shop.Persistence\\Shop.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Persistence\\Shop.Persistence.csproj",
         "projectName": "Shop.Persistence",
-        "projectPath": "H:\\CsharpProject\\Shop\\Shop.Persistence\\Shop.Persistence.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "H:\\CsharpProject\\Shop\\Shop.Persistence\\obj\\",
+        "projectPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Persistence\\Shop.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Shamsodini.Ali\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Shamsodini.Ali\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -335,11 +334,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "H:\\CsharpProject\\Shop\\Shop.Application\\Shop.Application.csproj": {
-                "projectPath": "H:\\CsharpProject\\Shop\\Shop.Application\\Shop.Application.csproj"
+              "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Application\\Shop.Application.csproj": {
+                "projectPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Application\\Shop.Application.csproj"
               },
-              "H:\\CsharpProject\\Shop\\Shop.Domain\\Shop.Domain.csproj": {
-                "projectPath": "H:\\CsharpProject\\Shop\\Shop.Domain\\Shop.Domain.csproj"
+              "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Domain\\Shop.Domain.csproj": {
+                "projectPath": "C:\\Users\\Shamsodini.Ali\\RiderProjects\\MainShop\\Shop.Domain\\Shop.Domain.csproj"
               }
             }
           }
@@ -391,7 +390,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
