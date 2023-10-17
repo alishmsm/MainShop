@@ -6,4 +6,5 @@ namespace Client.Shop.ClientServices.Product;
 public interface IProductService
 {
     Task<Response<List<ProductDto>>?> GetProduct();
+    Task<Response<bool>> CreatProduct(ProductDto produc);
 }

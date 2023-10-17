@@ -1,0 +1,24 @@
+﻿@page "/CreateProduct"
+
+<h1 class="Centerize">ساخت محصول جدید</h1>
+
+<EditForm OnValidSubmit="_CreateProduct" Model="Product">
+  <DataAnnotationsValidator/>
+  
+  <div class="row">
+    <div class="col">
+      <InputText class="form-control" placeholder="نام محصول" @bind-Value="Product.Name"/>
+    </div>
+    <div class="col">
+      <InputDate class="form-control" placeholder="تاریخ ایجاد" @bind-Value="Product.CreatDate"/>
+    </div>
+    <div class="col-7">
+      <InputText class="form-control" placeholder="توضیحات" @bind-Value="Product.Description"/>
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-2">ایجاد</button>
+    </div>
+  </div>
+
+</EditForm>
+

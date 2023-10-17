@@ -9,41 +9,37 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Client.Shop
 build_property.RootNamespace = Client.Shop
-build_property.ProjectDir = H:\CsharpProject\Shop\Client.Shop\
+build_property.ProjectDir = C:\Users\Shamsodini.Ali\RiderProjects\MainShop\Client.Shop\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = H:\CsharpProject\Shop\Client.Shop
+build_property.MSBuildProjectDirectory = C:\Users\Shamsodini.Ali\RiderProjects\MainShop\Client.Shop
 build_property._RazorSourceGeneratorDebug = 
 
-[H:/CsharpProject/Shop/Client.Shop/App.razor]
+[C:/Users/Shamsodini.Ali/RiderProjects/MainShop/Client.Shop/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/CsharpProject/Shop/Client.Shop/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[C:/Users/Shamsodini.Ali/RiderProjects/MainShop/Client.Shop/Pages/CreateProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlUHJvZHVjdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/CsharpProject/Shop/Client.Shop/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[H:/CsharpProject/Shop/Client.Shop/Pages/Index.razor]
+[C:/Users/Shamsodini.Ali/RiderProjects/MainShop/Client.Shop/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/CsharpProject/Shop/Client.Shop/Shared/SurveyPrompt.razor]
+[C:/Users/Shamsodini.Ali/RiderProjects/MainShop/Client.Shop/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/CsharpProject/Shop/Client.Shop/_Imports.razor]
+[C:/Users/Shamsodini.Ali/RiderProjects/MainShop/Client.Shop/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/CsharpProject/Shop/Client.Shop/Shared/MainLayout.razor]
+[C:/Users/Shamsodini.Ali/RiderProjects/MainShop/Client.Shop/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-qbw56xkwbn
 
-[H:/CsharpProject/Shop/Client.Shop/Shared/NavMenu.razor]
+[C:/Users/Shamsodini.Ali/RiderProjects/MainShop/Client.Shop/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-aypscs9dc4
