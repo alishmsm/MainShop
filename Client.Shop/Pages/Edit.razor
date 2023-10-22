@@ -1,7 +1,7 @@
-﻿@page "/CreateProduct"
+﻿@page "/Edit/{Id:int}"
+<h3 class="Centerize">ویرایش اطلاعات</h3>
 
-<h1 class="Centerize">ساخت محصول جدید</h1>
-<EditForm OnValidSubmit="_CreateProduct" Model="Product">
+<EditForm OnValidSubmit="EditProduct" Model="Product">
   <DataAnnotationsValidator/>
   
   <div class="row">
@@ -17,9 +17,10 @@
       <InputText class="form-control" placeholder="توضیحات" @bind-Value="Product.Description"/>
     </div>
     <div class="col-auto">
-      <button type="submit" class="btn btn-primary mb-2">ایجاد</button>
+      <button type="submit" class="btn btn-primary mb-2">ویرایش</button>
     </div>
   </div>
 
 </EditForm>
+
 

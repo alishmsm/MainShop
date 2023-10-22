@@ -5,19 +5,30 @@ using Shope.Common.DTO.Product;
 
 namespace Client.Shop.Pages;
 
-public partial class CreateProduct
+public partial class Edit
 {
-    [Inject] 
-    public IProductService productService { get; set; }
     [Inject]
     public IJSRuntime JsRuntime { get; set; }
     [Inject]
     public NavigationManager NavigationManager { get; set; }
+    [Inject]
+    public IProductService productService { get; set; }
+    [Parameter]
+    public int Id { get; set; }
     public ProductDto Product { get; set; } = new ProductDto();
-    // public string Message { get; set; }
-    public async Task _CreateProduct()
+    protected override async Task OnInitializedAsync()
     {
-        var response = await productService.CreatProduct(Product);
+        await GetData(Id);
+    }
+
+    private async Task GetData(int id)
+    {
+        var response = await productService.GetProductById(id);
+        Product = response.Data;
+    }
+    public async Task EditProduct()
+    {
+        var response = await productService.EditProduct(Product);
         if (response.IsSucces)
         {
             NavigationManager.NavigateTo("/");
@@ -27,11 +38,10 @@ public partial class CreateProduct
             await Alert(response.Message);
         }
     }
-
-
     private async Task Alert(string message)
     {
         await JsRuntime.InvokeVoidAsync("Alert", message);
     }
+
 
 }

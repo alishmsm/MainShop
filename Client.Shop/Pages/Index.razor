@@ -4,8 +4,7 @@
 
 <PageTitle>محصولات</PageTitle>
 
-<h1 class="Centerize
-">لیست محصولات</h1>
+<h1 class="Centerize">لیست محصولات</h1>
 <div class="row">
     <table class="table table-bordered table-striped">
         <thead>
@@ -24,8 +23,17 @@
         
                     <td>@product.Name</td>
                     <td>@product.Description</td>
-                    <td>@product.CreatDate.ToString()</td>
-        
+
+                    <td>@product.CreatDate.ToString() 
+                      <span style="margin-right: 20px;"></span>
+                        @{
+                            string link = "/Edit/" + product.Id.ToString();
+                        }
+                        <NavLink class="btn btn-primary" href="@link">Edit</NavLink>
+                        @* <NavLink></NavLink> *@
+                        <button class="btn btn-danger" @onclick="() => DeleteProduct(product.Id)">Delete</button>
+</td>
+
                 </tr>
         
             }
