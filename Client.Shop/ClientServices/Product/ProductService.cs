@@ -15,9 +15,9 @@ public class ProductService : IProductService
     {
         _httpClient = httpClient;
     }
-    public async Task<Response<List<ProductDto>>?> GetProduct()
+    public async Task<Response<List<ProductDto>>?> GetProduct(int currentPage,int pageSiza,string? SearchKey)
     {
-        var result = await _httpClient.GetFromJsonAsync<Response<List<ProductDto>>>($"api/Product?page=1&pageSize=15&search={""}");
+        var result = await _httpClient.GetFromJsonAsync<Response<List<ProductDto>>>($"api/Product?page={currentPage}&pageSize={pageSiza}&search={SearchKey}");
         return result;
 
 

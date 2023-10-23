@@ -7,7 +7,7 @@ public interface IProductService
 {
     Task<Response<ProductDto>?> EditProduct(ProductDto product);
     Task<Response<ProductDto>> GetProductById(int id);
-    Task<Response<List<ProductDto>>?> GetProduct();
+    Task<Response<List<ProductDto>>?> GetProduct(int currentPage,int pageSiza,string? SearchKey);
     Task<Response<bool>> CreatProduct(ProductDto product);
     Task<Response<bool>> DeleteProduct(int id);
 }

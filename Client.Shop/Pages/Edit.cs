@@ -2,9 +2,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 using Shope.Common.DTO.Product;
-
 namespace Client.Shop.Pages;
-
 public partial class Edit
 {
     [Inject]

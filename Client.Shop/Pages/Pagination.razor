@@ -1,0 +1,43 @@
+﻿
+<div style="display: flex" class="Centerize">
+     <div class="pagination">
+       <button @onclick="PreviousPage" disabled="@IsFirstPage">Previous</button>
+    <span>@CurrentPage</span>
+     <button @onclick="NextPage" disabled="@IsLastPage">Next</button>
+    </div>  
+     <div style="margin-right: 60px">
+      تعداد کل صفحات: @TotalPages
+       </div>
+</div>
+@code {
+
+    [Parameter]
+    public int PageSize { get; set; } = 1;
+
+    [Parameter]
+    public int CurrentPage { get; set; } 
+    [Parameter]
+    public int TotalCount { get; set; }
+    public bool IsFirstPage => CurrentPage == 1;
+    public bool IsLastPage => CurrentPage >= TotalPages;
+    [Parameter]
+    public EventCallback<int> GetDataEventCallback { get; set; }
+    public int TotalPages  => TotalCount / PageSize + 1;
+    public async Task PreviousPage()
+    {
+        if (!IsFirstPage)
+        {
+            CurrentPage--;
+            await GetDataEventCallback.InvokeAsync(CurrentPage);
+        }
+    }
+    
+    public async Task NextPage()
+    {
+        if (!IsLastPage)
+        {
+            CurrentPage++;
+            await GetDataEventCallback.InvokeAsync(CurrentPage);
+        }
+    }
+}

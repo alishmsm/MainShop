@@ -21,9 +21,16 @@ public class Response<TData>
         Data = data;
         IsSucces = true;
     }
+    public Response(TData data, int totalCount)
+    {
+        TotalCount = totalCount;
+        Data = data;
+        IsSucces = true;
+    }
     public bool IsSucces{ get; set; }
     public string? Message{ get; set; }
     public TData Data { get; set; }
+    public int TotalCount { get; set; }
 }
 
 // public class Response

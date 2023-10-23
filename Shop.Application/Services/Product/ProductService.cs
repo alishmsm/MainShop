@@ -23,16 +23,19 @@ public class ProductService : IProductService
         var query = _context.Products
             .AsNoTracking()
             .Where(x => x.IsDelete == false);
-        if (search != null)
+        int totalCount;
+        if (!string.IsNullOrWhiteSpace(search))
         {
             query = query.Where(x => x.Name.Contains(search));
+            
         }
+        totalCount = query.Count();
         var Productlist = await query.Skip((page-1) * pageSize)
             .Take(pageSize)
             .ProjectTo<ProductDto>(_mapper.ConfigurationProvider)
             .ToListAsync();
-        
-        return new Response<IEnumerable<ProductDto>>(Productlist);
+        var data = new Response<IEnumerable<ProductDto>>(Productlist,totalCount);
+        return data;
 
     }
 
