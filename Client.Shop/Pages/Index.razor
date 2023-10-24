@@ -1,59 +1,101 @@
 ﻿@page "/"
 @inherits ProductList
+@inject IDialogService DialogService
 @* @using Shope.Domain.Entities.User *@
 
 <PageTitle>محصولات</PageTitle>
 <h1 class="Centerize">لیست محصولات</h1>  
 <div>
    <div>
-   <InputText Value="@SearchKey" ValueChanged="Search" ValueExpression="() => SearchKey" class="form-control" placeholder="جستجو محصول"  />
+       @* <InputText Value="@SearchKey" ValueChanged="Search" ValueExpression="() => SearchKey" class="form-control" placeholder="جستجو محصول"  /> *@
+       <MudTextField T="string" Value="SearchKey" ValueChanged="Search" Label="Normal" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="Icons.Material.Filled.Search" Placeholder="جستجو محصول" />
+       @* <MudTextField T="string" @bind-Value="SearchKey" Label="Normal" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="Icons.Material.Filled.Search" Placeholder="جستجو محصول" /> *@
+
+       @* <MudTextField @bind-Value="@SearchKey" ValueExpression="() => SearchKey" Label="Normal" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Search"/> *@
    </div> 
 </div>
 
 
-<div class="row">
-    <table class="table table-bordered table-striped">
-        <thead>
-        <tr>
-            <th>نام محصول</th>
-            <th>توضیحات</th>
-            <th>تاریخ ایجاد</th>
-        </tr>
-        </thead>
-        <tbody>
-        @if (Products != null)
-        {
-            @foreach (var product in Products)
-            {
-                <tr>
-        
-                    <td>@product.Name</td>
-                    <td>@product.Description</td>
+@if(Products != null){
+    <MudTable Items="@Products" RowsPerPage="@PageSize" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
+        <HeaderContent>
+            <MudTh>نام محصول</MudTh>
+            <MudTh>توضیحات</MudTh>
+            <MudTh>تاریخ ایجاد</MudTh>
 
-                    <td>@product.CreatDate.ToString() 
-                        <span style="margin-right: 20px;"></span>
-                        @{
-                            string link = "/Edit/" + product.Id.ToString();
-                        }
-                        <NavLink class="btn btn-primary" href="@link">Edit</NavLink>
-                        @* <NavLink></NavLink> *@
-                        <button class="btn btn-danger" @onclick="() => DeleteProduct(product.Id)">Delete</button>
-                    </td>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd DataLabel="Name">@context.Name</MudTd>
+            <MudTd DataLabel="Description">@context.Description</MudTd>
+            <MudTd DataLabel="CreateDate">@context.CreatDate.ToString()
+            
+             <span style="margin-right: 20px;"></span>
+                @* @code{ *@
+                @*     string link = "/Edit/" + context.Id.ToString(); *@
+                @* } *@
+                @* <NavLink class="btn btn-primary" href="@("/Edit/" + context.Id.ToString())">Edit</NavLink> *@
+                @* $1$ <NavLink></NavLink> #1# *@
+                @* <mubutton class="btn btn-danger" @onclick="() => DeleteProduct(context.Id)">Delete</mubutton> *@
+                <MudButton StartIcon="@Icons.Material.Filled.Delete" @onclick="args => DeleteProduct(context.Id)" Variant="Variant.Filled" Color="Color.Error">Delete</MudButton>
+                @* <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Delete" Color="Color.Error">Delete</MudButton> *@
+            
+                </MudTd>
 
-                </tr>
+        </RowTemplate>
+            <PagerContent>
+                <MudPagination SelectedChanged="PageChanged" Count="PageCount()" Class="pa-4"/>
+            </PagerContent>
+    </MudTable>
+    
+}
+else
+{
+    <p>
+        There isn't Product
+    </p>
+}
 
-        
-            }
-            <Pagination CurrentPage="CurrentPage" PageSize="PageSize" TotalCount="TotalCount" GetDataEventCallback="ChangePage"></Pagination>
-
-        }
-
-        else
-        {
-            <p>
-                There isn't Product
-            </p>
-        }
-        </tbody>
-    </table>
-</div>
+    @* <table class="table table-bordered table-striped"> *@
+    @*     <thead> *@
+    @*     <tr> *@
+    @*         <th>نام محصول</th> *@
+    @*         <th>توضیحات</th> *@
+    @*         <th>تاریخ ایجاد</th> *@
+    @*     </tr> *@
+    @*     </thead> *@
+    @*     <tbody> *@
+    @*     @if (Products != null) *@
+    @*     { *@
+    @*         @foreach (var product in Products) *@
+    @*         { *@
+    @*             <tr> *@
+    @*      *@
+    @*                 <td>@product.Name</td> *@
+    @*                 <td>@product.Description</td> *@
+    @* *@
+    @*                 <td>@product.CreatDate.ToString()  *@
+    @*                     <span style="margin-right: 20px;"></span> *@
+    @*                     @{ *@
+    @*                         string link = "/Edit/" + product.Id.ToString(); *@
+    @*                     } *@
+    @*                     <NavLink class="btn btn-primary" href="@link">Edit</NavLink> *@
+    @*                     $1$ <NavLink></NavLink> #1# *@
+    @*                     <button class="btn btn-danger" @onclick="() => DeleteProduct(product.Id)">Delete</button> *@
+    @*                 </td> *@
+    @* *@
+    @*             </tr> *@
+    @* *@
+    @*      *@
+    @*         } *@
+    @*         <Pagination CurrentPage="CurrentPage" PageSize="PageSize" TotalCount="TotalCount" GetDataEventCallback="ChangePage"></Pagination> *@
+    @* *@
+    @*     } *@
+    @* *@
+    @*     else *@
+    @*     { *@
+    @*         <p> *@
+    @*             There isn't Product *@
+    @*         </p> *@
+    @*     } *@
+    @*     </tbody> *@
+    @* </table> *@
