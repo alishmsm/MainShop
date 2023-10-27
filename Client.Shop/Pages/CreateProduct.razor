@@ -1,25 +1,67 @@
 ﻿@page "/CreateProduct"
 
 <h1 class="Centerize">ساخت محصول جدید</h1>
-<EditForm OnValidSubmit="_CreateProduct" Model="Product">
-  <DataAnnotationsValidator/>
-  
-  <div class="row">
-    <div class="col">
-      <InputText class="form-control" placeholder="نام محصول" @bind-Value="Product.Name"/>
-      @* Show Error Message *@
-      <ValidationMessage For="() => Product.Name"></ValidationMessage>
-    </div>
-    <div class="col">
-      <InputDate class="form-control" placeholder="تاریخ ایجاد" @bind-Value="Product.CreatDate"/>
-    </div>
-    <div class="col-7">
-      <InputText class="form-control" placeholder="توضیحات" @bind-Value="Product.Description"/>
-    </div>
-    <div class="col-auto">
-      <button type="submit" class="btn btn-primary mb-2">ایجاد</button>
-    </div>
-  </div>
+@* <EditForm OnValidSubmit="_CreateProduct" Model="Product"> *@
+@*   <DataAnnotationsValidator/> *@
+@*    *@
+@*   <div class="row"> *@
+@*     <div class="col"> *@
+@*       <InputText class="form-control" placeholder="نام محصول" @bind-Value="Product.Name"/> *@
+@*       $1$ Show Error Message #1# *@
+@*       <ValidationMessage For="() => Product.Name"></ValidationMessage> *@
+@*     </div> *@
+@*     <div class="col"> *@
+@*       <InputDate class="form-control" placeholder="تاریخ ایجاد" @bind-Value="Product.CreatDate"/> *@
+@*     </div> *@
+@*     <div class="col-7"> *@
+@*       <InputText class="form-control" placeholder="توضیحات" @bind-Value="Product.Description"/> *@
+@*     </div> *@
+@*     <div class="col-auto"> *@
+@*       <button type="submit" class="btn btn-primary mb-2">ایجاد</button> *@
+@*     </div> *@
+@*   </div> *@
+@*    *@
+@* </EditForm> *@
 
+<EditForm Model="Product" OnValidSubmit="_CreateProduct">
+<DataAnnotationsValidator/>
+<MudGrid>
+    <MudItem xs="12" sm="7">
+        <MudCard>
+            <MudCardContent>
+                <MudTextField Label="نام محصول" HelperText="Max. 8 characters"
+                              @bind-Value="Product.Name" For="@(() => Product.Name)"/>
+                <MudTextField Label="تاریخ ایجاد" Class="mt-3"
+                              @bind-Value="Product.CreatDate" For="@(() => Product.CreatDate)"/>
+                <MudTextField Label="توضیحات" HelperText="Choose a strong password" Class="mt-3"
+                              @bind-Value="Product.Description" For="@(() => Product.Description)"/>
+
+            </MudCardContent>
+            <MudCardActions>
+                <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">ایجاد</MudButton>
+            </MudCardActions>
+        </MudCard>
+    </MudItem>
+    <MudItem xs="12" sm="5">
+        <MudPaper Class="pa-4 mud-height-full">
+            <MudText Typo="Typo.subtitle2">Validation Summary</MudText>
+            @if (success)
+            {
+                <MudText Color="Color.Success">Success</MudText>
+            }
+            else
+            {
+                <MudText Color="@Color.Error">
+                    <ValidationSummary />
+                </MudText>
+            }
+        </MudPaper>
+    </MudItem>
+    <MudItem xs="12">
+        <MudText Typo="Typo.body2" Align="Align.Center">
+            لطفا اطلاعات فرم را به صورت کامل و دقیق وارد کنید.
+        </MudText>
+    </MudItem>
+</MudGrid>
 </EditForm>
 

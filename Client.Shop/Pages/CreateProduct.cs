@@ -7,6 +7,7 @@ namespace Client.Shop.Pages;
 
 public partial class CreateProduct
 {
+    public bool success { get; set; }
     [Inject] 
     public IProductService productService { get; set; }
     [Inject]
@@ -15,6 +16,11 @@ public partial class CreateProduct
     public NavigationManager NavigationManager { get; set; }
     public ProductDto Product { get; set; } = new ProductDto();
     // public string Message { get; set; }
+    protected override void OnInitialized()
+    {
+        Product.CreatDate = DateTime.Now.Date;
+    }
+
     public async Task _CreateProduct()
     {
         var response = await productService.CreatProduct(Product);
